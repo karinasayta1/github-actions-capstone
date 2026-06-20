@@ -20,6 +20,7 @@ jobs:
 
     needs: build-test
     runs-on: ubuntu-latest
+    secrets: inherit
     if: needs.build-test.result == 'success'
 
     steps:
