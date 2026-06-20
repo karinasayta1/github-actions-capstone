@@ -15,6 +15,9 @@ jobs:
     uses: ./.github/workflows/reusable-build-test.yml
     with:
       run_tests: true
+    secrets:
+      DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+      DOCKER_TOKEN: ${{ secrets.DOCKER_TOKEN }}
 
   dependency-check:
 
