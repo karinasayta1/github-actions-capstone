@@ -58,3 +58,4 @@ jobs:
       - name: output
         id: set-url
         run: echo "url=${{ inputs.image_name }}:${{ matrix.tag }}" >> "$GITHUB_OUTPUT"
+        
