@@ -1,8 +1,9 @@
 name: pr pipeline
 
 on:
-  pull_request:
-    type: [opened, synchronized]
+  workflow_dispatch: 
+  # pull_request:
+  #   type: [opened, synchronized]
 
 permissions:
   contents: read
